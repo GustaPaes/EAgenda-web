@@ -1,0 +1,14 @@
+{
+  "name": "conversao-arrays",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
+    "start": "tsc --w"    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"  
+}

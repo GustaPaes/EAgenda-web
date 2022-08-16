@@ -1,0 +1,59 @@
+body {
+  font-size: 22px;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  
+  background-color: rgba(135, 120, 120, 0.471) ;
+  
+  padding: 30px 25%;
+}
+
+.navbar>a {
+  color: rgb(33, 16, 16);
+  margin: 0 20px;
+  
+  text-decoration: none;
+}
+
+.navbar>a:last-of-type {
+  margin-left: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin-top: 0;
+  padding: 1% 10%;
+}
+
+.containerLinha {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.containerLinha>p {
+  margin: 2%;
+  width: 50%;
+}
+
+.containerLinha>img {
+  width: 50%;
+  padding-top: 3%;
+}
+
+
+.fixarRodape {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
