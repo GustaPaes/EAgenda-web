@@ -40,7 +40,7 @@ class ContatoPaginaCadastro implements IPaginaHTML, IPaginaFormulario {
     this.txtNome = document.getElementById("txtNome") as HTMLInputElement;
     this.txtTelefone = document.getElementById("txtTelefone") as HTMLInputElement;
     this.txtAcao = document.getElementById("txtAcao") as HTMLInputElement;
-    this.btnSalvar = document.getElementById("btnSalvar") as HTMLButtonElement;
+    this.btnSalvar = document.getElementById("btnSalvarContato") as HTMLButtonElement;
 
     // operador discard _
     this.btnSalvar.addEventListener("click", (_evt) => this.gravarRegistros());

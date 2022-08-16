@@ -46,7 +46,7 @@ class TarefaPaginaCadastro implements IPaginaHTML, IPaginaFormulario {
 
   configurarElementos(): void {
     this.txtDescricao = document.getElementById("txtDescricao") as HTMLInputElement;
-    this.btnSalvar = document.getElementById("btnSalvar") as HTMLButtonElement;
+    this.btnSalvar = document.getElementById("btnSalvarTarefa") as HTMLButtonElement;
 
     // operador discard _
     this.btnSalvar.addEventListener("click", (_evt) => this.gravarRegistros());
