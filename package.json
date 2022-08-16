@@ -1,14 +1,15 @@
 {
-  "name": "conversao-arrays",
+  "name": "e-agenda-web",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
-    "start": "tsc --w"    
+    "start": "tsc --w"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"  
+  "license": "ISC",
+  "dependencies": {
+    "guid-typescript": "^1.0.9"
+  }
 }

@@ -1,8 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es2017",
     "module": "es6",
+    "moduleResolution": "node",
     "strict": true,
+    "strictPropertyInitialization": false,
+    "noUnusedLocals": false,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "skipLibCheck": true,
