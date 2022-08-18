@@ -1,9 +1,8 @@
-import { IPaginaHTML } from "../shared/pagina.interface.js";
-import { IPaginaListagem } from "../shared/pagina.list.interface.js";
-import { IRepositorio } from "../shared/repositorio.interface.js";
-import { Prioridade } from "./prioridade.enum.js";
-import { Tarefa } from "./tarefa.model.js";
-import { TarefaRepositoryLocalStorage } from "./tarefa.repository.local-storage.js";
+import { IPaginaHTML } from "../shared/pagina.interface";
+import { IPaginaListagem } from "../shared/pagina.list.interface";
+import { IRepositorio } from "../shared/repositorio.interface";
+import { Tarefa } from "./models/tarefa.model";
+import { TarefaRepositoryLocalStorage } from "./repositories/tarefa.repository.local-storage";
 
 class TarefaPaginaListagem implements IPaginaHTML, IPaginaListagem {
   tabela: HTMLTableElement;

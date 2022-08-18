@@ -9,13 +9,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
   
   <link rel="stylesheet" href="../css/style.css">
-  <script type="module" src="../../dist/tarefas/tarefa.list.js" defer></script>
+  <script type="module" src="./contato.create.ts" defer></script>
   <title>Contatos - eAgenda Web</title>
 </head>
 <body class="bg-dark">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-2 border-bottom border-secondary">
     <div class="container">
-      <a class="navbar-brand" href="../../index.html">
+      <a class="navbar-brand" href="../index.html">
         eAgenda
         <span class="badge bg-warning text-bg-light">web</span>
       </a>
@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse text-center text-md-start" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold fs-5">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../../index.html">Início</a>
+            <a class="nav-link" aria-current="page" href="../index.html">Início</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,30 +49,36 @@
     </div>
   </nav>
 
-  <main class="container mt-2">
-    <div class="text-center text-md-start p-0 p-md-5">
+  <main class="container d-flex justify-content-center mt-2">
+    <div class="row w-75 text-center text-md-start p-0 p-md-5">
       <section id="cabecalho">
         <header>
-          <h1 class="title text-light fw-bold">Contatos</h1>
+          <h1 class="title text-light fw-bold">Cadastrar Contato</h1>
           <p class="fs-5 mt-3 text-warning fw-semibold">Cadastre seus contatos.</p>
-          <a href="./contato.create.html" class="btn btn-lg btn-primary px-5">Novo Contato</a>
         </header>
-      </section>
+        <div class="card text-bg-dark border-secondary p-0 p-md-2 mt-4 d-flex">
+          <div class="card-body p-5">
+            <form class="form text-bg-dark mt-3" id="formulario">
 
-      <section id="listagem">
-        <div class="card text-bg-dark border-secondary mt-4 p-2">
-          <div class="card-body">
-            <table id="tabela" class="table table-dark text-center">
-              <thead>
-                <tr>
-                  <th>Id</th>
-                  <th>Nome</th>
-                  <th>Telefone</th>
-                  <th>Ação</th>
-                </tr>
-              </thead>
-              <tbody class="table-group-divider"></tbody>
-            </table>
+              <div class="form-group">
+                <label class="form-label fs-5" for="txtNome">Nome</label>
+                <input id="txtNome" class="form-control" type="text" placeholder="Nome do seu Contato">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label fs-5" for="txtTelefone">Telefone</label>
+                <input id="txtTelefone" class="form-control" type="text" placeholder="Telefone do seu Contato">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label fs-5" for="txtAcao">Ação</label>
+                <input id="txtAcao" class="form-control" type="text" placeholder="Ação do seu Contato">
+              </div>
+
+            </form>
+          </div>
+          <div class="card-footer px-3 text-center text-md-end">
+            <button id="btnSalvarContato" type="button" class="btn btn-primary mt-4 px-5">Salvar</button>
           </div>
         </div>
       </section>

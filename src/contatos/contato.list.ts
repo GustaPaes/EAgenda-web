@@ -1,8 +1,9 @@
-import { IPaginaHTML } from "../shared/pagina.interface.js";
-import { IPaginaListagem } from "../shared/pagina.list.interface.js";
-import { IRepositorio } from "../shared/repositorio.interface.js";
-import { Contato } from "./contato.model.js";
-import { ContatoRepositoryLocalStorage } from "./contato.repository.local-storage.js";
+import { IPaginaHTML } from "../shared/pagina.interface";
+import { IPaginaListagem } from "../shared/pagina.list.interface";
+import { IRepositorio } from "../shared/repositorio.interface";
+import { Contato } from "./models/contato.model";
+import { ContatoRepositoryLocalStorage } from "./repositories/contato.repository.local-storage";
+
 
 class ContatoPaginaListagem implements IPaginaHTML, IPaginaListagem {
   tabela: HTMLTableElement;

@@ -1,8 +1,8 @@
-import { IPaginaFormulario } from "../shared/pagina.create.interface.js";
-import { IPaginaHTML } from "../shared/pagina.interface.js";
-import { IRepositorio } from "../shared/repositorio.interface.js";
-import { Contato } from "./contato.model.js";
-import { ContatoRepositoryLocalStorage } from "./contato.repository.local-storage.js";
+import { IPaginaFormulario } from "../shared/pagina.create.interface";
+import { IPaginaHTML } from "../shared/pagina.interface";
+import { IRepositorio } from "../shared/repositorio.interface";
+import { Contato } from "./models/contato.model";
+import { ContatoRepositoryLocalStorage } from "./repositories/contato.repository.local-storage";
 
 class ContatoPaginaCadastro implements IPaginaHTML, IPaginaFormulario {
   private txtNome: HTMLInputElement;
